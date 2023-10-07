@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95C860DB2AD17B9E00883EB7 /* ReducerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D22AD17B9E00883EB7 /* ReducerProtocol.swift */; };
+		95C860DC2AD17B9E00883EB7 /* RuntimeActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D32AD17B9E00883EB7 /* RuntimeActor.swift */; };
+		95C860DD2AD17B9E00883EB7 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D42AD17B9E00883EB7 /* Effect.swift */; };
+		95C860DE2AD17B9E00883EB7 /* ChildStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D52AD17B9E00883EB7 /* ChildStore.swift */; };
+		95C860DF2AD17B9E00883EB7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D62AD17B9E00883EB7 /* Store.swift */; };
+		95C860E02AD17B9E00883EB7 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D72AD17B9E00883EB7 /* Mapper.swift */; };
+		95C860E12AD17B9E00883EB7 /* StateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860D92AD17B9E00883EB7 /* StateProtocol.swift */; };
+		95C860E22AD17B9E00883EB7 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C860DA2AD17B9E00883EB7 /* ActionProtocol.swift */; };
 		95E7C0882AD17B0900982D29 /* AnotherMVU.docc in Sources */ = {isa = PBXBuildFile; fileRef = 95E7C0872AD17B0900982D29 /* AnotherMVU.docc */; };
 		95E7C08E2AD17B0900982D29 /* AnotherMVU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E7C0832AD17B0900982D29 /* AnotherMVU.framework */; };
 		95E7C0932AD17B0900982D29 /* AnotherMVUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7C0922AD17B0900982D29 /* AnotherMVUTests.swift */; };
@@ -24,6 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95C860D22AD17B9E00883EB7 /* ReducerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerProtocol.swift; sourceTree = "<group>"; };
+		95C860D32AD17B9E00883EB7 /* RuntimeActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeActor.swift; sourceTree = "<group>"; };
+		95C860D42AD17B9E00883EB7 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		95C860D52AD17B9E00883EB7 /* ChildStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildStore.swift; sourceTree = "<group>"; };
+		95C860D62AD17B9E00883EB7 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		95C860D72AD17B9E00883EB7 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		95C860D92AD17B9E00883EB7 /* StateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateProtocol.swift; sourceTree = "<group>"; };
+		95C860DA2AD17B9E00883EB7 /* ActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
 		95E7C0832AD17B0900982D29 /* AnotherMVU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnotherMVU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7C0862AD17B0900982D29 /* AnotherMVU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherMVU.h; sourceTree = "<group>"; };
 		95E7C0872AD17B0900982D29 /* AnotherMVU.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AnotherMVU.docc; sourceTree = "<group>"; };
@@ -50,6 +66,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95C860D12AD17B9E00883EB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95C860D22AD17B9E00883EB7 /* ReducerProtocol.swift */,
+				95C860D32AD17B9E00883EB7 /* RuntimeActor.swift */,
+				95C860D72AD17B9E00883EB7 /* Mapper.swift */,
+				95C860E32AD17CC200883EB7 /* Store */,
+				95C860D82AD17B9E00883EB7 /* Data */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		95C860D82AD17B9E00883EB7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				95C860D42AD17B9E00883EB7 /* Effect.swift */,
+				95C860D92AD17B9E00883EB7 /* StateProtocol.swift */,
+				95C860DA2AD17B9E00883EB7 /* ActionProtocol.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		95C860E32AD17CC200883EB7 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				95C860D52AD17B9E00883EB7 /* ChildStore.swift */,
+				95C860D62AD17B9E00883EB7 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		95E7C0792AD17B0900982D29 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +118,7 @@
 		95E7C0852AD17B0900982D29 /* AnotherMVU */ = {
 			isa = PBXGroup;
 			children = (
+				95C860D12AD17B9E00883EB7 /* Common */,
 				95E7C0862AD17B0900982D29 /* AnotherMVU.h */,
 				95E7C0872AD17B0900982D29 /* AnotherMVU.docc */,
 			);
@@ -194,6 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C860DE2AD17B9E00883EB7 /* ChildStore.swift in Sources */,
+				95C860E12AD17B9E00883EB7 /* StateProtocol.swift in Sources */,
+				95C860DD2AD17B9E00883EB7 /* Effect.swift in Sources */,
+				95C860E02AD17B9E00883EB7 /* Mapper.swift in Sources */,
+				95C860E22AD17B9E00883EB7 /* ActionProtocol.swift in Sources */,
+				95C860DB2AD17B9E00883EB7 /* ReducerProtocol.swift in Sources */,
+				95C860DF2AD17B9E00883EB7 /* Store.swift in Sources */,
+				95C860DC2AD17B9E00883EB7 /* RuntimeActor.swift in Sources */,
 				95E7C0882AD17B0900982D29 /* AnotherMVU.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +406,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -387,7 +443,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -414,6 +470,7 @@
 		95E7C09B2AD17B0900982D29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -433,6 +490,7 @@
 		95E7C09C2AD17B0900982D29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
