@@ -14,7 +14,7 @@ public final class ChildStore<
     public typealias State = Reducer.State
     public typealias Action = Reducer.Action
 
-    var state: State.State {
+    public var state: State.State {
         getState()
     }
 
