@@ -24,7 +24,7 @@ public final class ChildStore<
     private let toParent: (Action.UIAction) -> Void
     private let runtime: Runtime
 
-    init(
+    public init(
         reducer: Reducer,
         getState: @escaping () -> State.State,
         setState: @escaping (State.State) -> Void,
